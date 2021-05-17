@@ -47,7 +47,6 @@ class OscillatorAgent(Agent):
             init_state: Initial state
             state_dim: Dimensionality of state space
         """
-
         self.__k = k
         self.__mu = mu
         self.__local_controller = KuramotoController(simulator, self, nat_freq)
