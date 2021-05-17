@@ -1,20 +1,26 @@
-# clusterFlow
+# Compressive MultiAgent System Sensing (CMASS)
 
-A simulation environment for cluster identification in multiagent systems
+Cluster identification in multiagent systems using CMASS algorithm.
 
 ## Requirements
 
 In case you wish to run the notebook on your machine, the following packages should be installed beforehand:
 * Python 3
-* Jupyter Notebook
 * NumPy
 * SciPy
 * matplotlib
+* Jupyter Notebook (optional)
 
-## How to run
+## How to use the software
 
-Install the required packages.
-Then navigate to ./clusterFlow and run 
+Install the required packages then import classes and functions in [cmass/](cmass/).
+Inspect class and function documentation using ```help(item)``` or ```print(item.__doc__)```, where ```item``` is a class or a function.
+An example of CMASS usage is demonstrated in [example_16nodes.ipynb](example_16nodes.ipynb).
+
+### Naive example
+
+You may test a naive example of an algorithm with simplified code.
+Navigate to [naive_example/](naive_example/) and run 
 ```shell
 jupyter notebook Cluster_Identification_In_Kuramoto_Model.ipynb
 ```
