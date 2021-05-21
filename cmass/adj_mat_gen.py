@@ -9,9 +9,6 @@ def example_squares_16():
     Example adjacency matrix corresponding to a graph with 16 nodes connected into 4 cyclic squares, 
     which are themselves inter-connected in a larger suqare with its corners being the four mentioned cyclic agent clusters.
 
-    Args:
-        adj_mat_empty: Empty adjacency matrix
-
     Returns:
         adj_mat: Ready adjacency matrix
     """

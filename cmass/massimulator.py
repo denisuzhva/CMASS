@@ -57,8 +57,7 @@ class KuramotoSimulator(Simulator):
         self.__dt = dt
         self.__clust_time = clust_time 
         self.__n_agents = n_agents
-        self.__adj_matrix = adj_matrix
-        self.__adj_dict = {i: np.nonzero(self.__adj_matrix[i])[0].tolist() for i in range(n_agents)}
+        self.__adj_dict = {i: np.nonzero(adj_matrix[i])[0].tolist() for i in range(n_agents)}
         self.__agents = {i: OscillatorAgent(self, rho, mus[i], nat_freqs[i], f0s[cluster_map[i]], init_states[i] if isinstance(init_states, list) else None) for i in range(n_agents)}
         self.__agents_inv = {agent: i for i, agent in self.__agents.items()}
 
